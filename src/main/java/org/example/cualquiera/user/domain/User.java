@@ -38,4 +38,6 @@ public class User {
     @Size(min = 8)
     @Pattern(regexp = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$")
     private String password;
+
+    public String getUsername(){ return this.email;}
 }
